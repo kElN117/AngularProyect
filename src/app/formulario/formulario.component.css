@@ -1,0 +1,52 @@
+.form {
+    max-width: 600px; /* ancho máximo del formulario */
+    margin: 0 auto; /* centrar el formulario en la pantalla */
+    background-color: rgba(51, 51, 51, 0.8); /* fondo del formulario con transparencia */
+    padding: 20px; /* espacio interno del formulario */
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+.container{
+    margin: 1rem 10px;
+    height: 100%;
+}
+
+label {
+    display: block; /* poner cada etiqueta en una línea separada */
+    margin-bottom: 10px; /* espacio entre etiquetas */
+    color: white;
+}
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%; /* ocupar todo el ancho disponible */
+    padding: 10px; /* espacio interno de los campos de texto */
+    border: none; /* quitar el borde predeterminado */
+    background-color: rgba(0, 0, 0, 0.1); /* fondo con transparencia */
+    margin-bottom: 20px; /* espacio entre campos */
+    color: white;
+  }
+
+.formcontrol{
+    outline: none;
+}
+
+button{
+    margin-right: 2rem auto;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    color: #fff;
+
+}

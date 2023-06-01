@@ -1,0 +1,32 @@
+<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="verificador">
+    <strong>Error</strong> {{msgText}}
+    <button type="button" class="btn-close" (click)="Cerrar()" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> -->
+
+<div class="form">
+    <div class="container">
+        <label style="color:white" for="Input1" class="form-label">Nombre</label>
+        <input class="formcontrol" type="text" [(ngModel)]="articuloSeleccionado.nombre">
+    
+        <label style="color:white" for="Input1" class="form-label">Descripcion</label>
+        <input class="formcontrol" type="text" [(ngModel)]="articuloSeleccionado.descripcion">
+    
+        <label style="color:white" for="Input1" class="form-label">URL de la Imagen</label>
+        <input class="form-control" type="text" [(ngModel)]="articuloSeleccionado.urlImagen">
+    
+        <label style="color:white" for="Input1" class="form-label">Precio</label>
+        <input class="formcontrol" type="number" [(ngModel)]="articuloSeleccionado.precio">
+    
+        <label style="color:white" for="Input1" class="form-label">Existencia</label>
+        <input class="formcontrol" type="number" [(ngModel)]="articuloSeleccionado.existencia">
+        <label style="color:white" for="Input1" class="form-label">Categoria</label>
+        <input class="formcontrol" type="number" [(ngModel)]="articuloSeleccionado.categoria">
+    
+        <label style="color:white" for="Input1" class="form-label">Tipo de Unidad</label>
+        <input class="formcontrol" type="number" [(ngModel)]="articuloSeleccionado.tipoUnidad">
+        <a href="api/api.php?nombre={{ articuloSeleccionado.nombre }}&&descripcion={{ articuloSeleccionado.descripcion }}&&urlMG={{ articuloSeleccionado.urlImagen }}&&precio={{ articuloSeleccionado.precio}}&&existencia={{ articuloSeleccionado.existencia }}&&categoria={{ articuloSeleccionado.categoria }}&&tipoUnidad={{ articuloSeleccionado.tipoUnidad }}"><button class="btn btn-primary" (click)="enviarDatos()">Agregar</button></a>
+
+    </div>  
+</div>
+
+

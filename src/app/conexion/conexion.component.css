@@ -1,0 +1,183 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #2b2b2b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-smoothing:grayscale;
+}
+
+.site-container{
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    grid-gap: 45px;
+    
+}
+
+.artiicle-image{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.article-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.article-card{
+    background: #23272E;;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.article-card:hover{
+    box-shadow: 0 4px 20px 0 rgba(62, 88, 204, 0.993);
+    cursor: pointer;
+}
+
+/* .article-image:hover{
+    opacity: 0.7;
+} */
+
+.article-content{
+    padding: 1rem;
+}
+
+.article-content .card-category{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: #ecebeb;
+    display: block;
+    text-decoration: none;
+}
+
+.article-content .card-title{
+    margin: 1rem 0;
+    color: #ffffff;
+}
+
+.article-content .card-excerpt{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #8db2c5;
+    margin: 1rem;
+}
+.btnEliminar, .btnModificar, .btnDevolver{
+    font-size: 11px;
+    width: 100px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: all .4s;
+    margin: 5px;
+    color: white;
+    margin: 9px;
+}
+
+.box{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btnComprar{
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    margin: 1px;
+    color: white;
+}
+
+.btnEliminar{
+    box-shadow: rgba(240, 0, 0, 0.2) 0px 9px 18px,
+    rgba(235, 7, 7, 0.2) 0px 5px 3px;
+    background: rgb(133, 36, 36);
+}
+
+.btnModificar{
+    box-shadow: rgba(201, 221, 23, 0.2) 0px 9px 18px,
+    rgba(208, 255, 0, 0.2) 0px 5px 3px;
+    background: rgb(150, 150, 51);
+}
+
+.btnComprar{
+    box-shadow: rgba(40, 240, 0, 0.2) 0px 9px 18px,
+    rgba(7, 235, 18, 0.2) 0px 5px 3px;
+    background: rgb(23, 102, 23);
+}
+
+.btnDevolver{
+    box-shadow: rgba(211, 112, 19, 0.808) 0px 9px 18px,
+    rgba(235, 182, 7, 0.2) 0px 5px 3px;
+    background: rgba(173, 98, 0, 0.986);
+}
+
+.btnEliminar:hover{
+    box-shadow: rgba(216, 12, 12, 0.3) 0px 19px 38px, rgba(124, 13, 13, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
+
+.btnModificar:hover{
+    box-shadow: rgba(203, 206, 35, 0.3) 0px 19px 38px, rgba(157, 192, 29, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
+
+.btnComprar:hover{
+    box-shadow: rgba(35, 206, 49, 0.3) 0px 19px 38px, rgba(29, 192, 37, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
+
+.btnDevolver:hover{
+    box-shadow: rgba(216, 128, 12, 0.3) 0px 19px 38px, rgba(124, 76, 13, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
+
+.gris {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.img-producto.gris {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+@keyframes animacion {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+.gris {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.img-producto.gris {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+@keyframes animacion {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

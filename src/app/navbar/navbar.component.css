@@ -1,0 +1,81 @@
+.my-button{
+    background: rgb(119, 119, 167);
+    background-color: #007bff;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   }
+.my-button span{
+    margin-right: 7.5spx;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+   }
+.my-button:hover{
+    background: rgb(160, 158, 158);
+    background-color: #0f4dc0;
+   }
+.my-button:active{
+    transform: scale(0.95);
+   }
+
+.Slide{
+    margin-right: 1rem auto;
+    margin: 1.5rem auto;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 14px 24px;
+    border: none;
+    background-color: rgb(129, 129, 129);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.Buscar{
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    width: 70%;
+    outline: none;
+}
+
+.btn-buscar{
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    width: 30%;
+    float: right; 
+}
+
+button i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 100px;
+}
+
+.btn-buscar:hover{
+    background: rgb(160, 158, 158);
+    background-color: #0f4dc0;
+}

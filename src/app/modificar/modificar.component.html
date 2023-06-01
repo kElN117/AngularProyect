@@ -1,0 +1,88 @@
+<!-- <div class="input-group mb-3">
+    <input #identificador type="text" class="form-control" placeholder="Nombre del Producto" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="buscarProducto(identificador.value)">Buscar</button>
+</div> -->
+
+<!-- <br> -->
+
+<!-- <table *ngIf="datos.length > 0" class="table table-striped table-dark" border="1" id="table">
+    <thead>
+    <tr>
+        <th>Producto</th>
+        <th>Descripción</th>
+        <th>Imagen</th>
+        <th>Precio</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dato of datos">
+        <td>{{ dato.PNombre }}</td>
+        <td>{{ dato.PDescripcion }}</td>
+        <td>{{ dato.PImagen }}</td>
+        <td>{{ dato.PPrecio }}</td>
+    </tr>
+    </tbody>
+</table> -->
+
+
+<div class="site-container">
+    <div class="article-container">
+        <article class="article-card" *ngFor="let usuario of datos">
+            <figure class="article-image">
+                <img src="{{ usuario.PImagen }}" alt="Video-Games-Blog">
+            </figure>
+            <div class="article-content">
+                <a class="card-category">{{usuario.PNombre}}</a>
+                <h3 class="card-tittle" style="color:rgb(255, 255, 255);">${{ usuario.PPrecio }}</h3>
+                <p class="card-excerpt">{{ usuario.PDescripcion }}</p>
+            </div>
+        </article>
+    </div>
+
+<div *ngFor="let dato of datos" class="date">
+    <div id="p">
+        <label style="color:white" for="Input1" class="form-label">idProducto</label>
+        <input #idPP class="formcontrol" type="text" value="{{ dato.idProductos }}">
+    </div>  
+        <label style="color:white" for="Input1" class="form-label">Nombre</label>
+        <!-- <input #nombreM class="formcontrol" type="text" value="{{ dato.PNombre }}"> -->
+        <input class="formcontrol" type="text" [(ngModel)]="artMOD.PNombre">
+        
+        <label style="color:white" for="Input1" class="form-label">Descripcion</label>
+        <!-- <input #descripcionM class="formcontrol" type="text" value="{{ dato.PDescripcion }}"> -->
+        <input class="formcontrol" type="text" [(ngModel)]="artMOD.PDescripcion">
+        
+        <label style="color:white" for="Input1" class="form-label">Url de la imagen</label>
+        <!-- <input #Url class="formcontrol" type="text" value="{{ dato.PImagen }}"> -->
+        <input class="formcontrol" type="text" [(ngModel)]="artMOD.PImagen">
+
+        <label style="color:white" for="Input1" class="form-label">Precio</label>
+        <!-- <input #precioM class="formcontrol" type="number" value="{{ dato.PPrecio }}"> -->
+        <input class="formcontrol" placeholder="modificar precio" type="number" [(ngModel)]="artMOD.PPrecio">
+    
+
+        <a href="/api/modificar.php?id={{ idPP.value }}&name={{ artMOD.PNombre }}&desc={{ artMOD.PDescripcion }}&url={{ artMOD.PImagen }}&precio={{ artMOD.PPrecio }}" class="btn btn-primary" (click)="enviarDatos()">Modificar</a>
+
+</div>
+<!-- <div class="mb-3 col-4">
+    <label for="Input1" class="form-label">Nombre</label>
+    <input class="form-control" type="text" value="{{ datos[1].PNombre }}">
+
+    <label for="Input1" class="form-label">Descripcion</label>
+    <input class="form-control" type="text" value="{{ datos[1].PDescripcion }}">
+
+    <label for="Input1" class="form-label">URL de la Imagen</label>
+    <input class="form-control" type="text" value=" {{datos[1].PDescripcion }}">
+
+    <label for="Input1" class="form-label">Precio</label>
+    <input class="form-control" type="number" >
+
+    <label for="Input1" class="form-label">Existencia</label>
+    <input class="form-control" type="number" >
+
+    <label for="Input1" class="form-label">Categoria</label>
+    <input class="form-control" type="number" >
+
+    <label for="Input1" class="form-label">Tipo de Unidad</label>
+    <input class="form-control" type="number" >
+</div> -->

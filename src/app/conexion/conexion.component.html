@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="site-container">
+        <div class="article-container">
+            <article class="article-card card" *ngFor="let usuario of datos">
+                <figure class="article-image">
+                    <img src="{{ usuario.PImagen }}" class="card-img-top img-producto" onerror="this.src='https://i.imgur.com/kVJym6k.png'"  alt="No encontrada">
+                </figure>
+                <div class="article-content">
+                    <a class="card-category">{{usuario.PNombre}}</a>
+                    <h3 class="card-tittle" style="color:rgb(255, 255, 255);">${{ usuario.PPrecio }}</h3>
+                    <p class="card-excerpt">Existencias: {{ usuario.PExistencia }}</p>
+                    <p class="card-excerpt">{{ usuario.PDescripcion }}</p>
+                    <div class="box">
+                        <button type="button" class="btnComprar" (click)="comprar(usuario.idProductos)">Comprar</button>
+                        <button type="button" class="btnEliminar" (click)="eliminarProducto(usuario.idProductos, $event)">Eliminar</button>
+                        <button type="button" class="btnModificar" (click)="modificar(usuario.PNombre)">Modificar</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
